@@ -23,9 +23,5 @@ export const AuthProvider = ({ children }: any) => {
     });
   }, [user]);
 
-  // if (user) {
-  //   <Redirect to={'home'} />;
-  // }
-
   return <UserContext.Provider value={user}>{children}</UserContext.Provider>;
 };
